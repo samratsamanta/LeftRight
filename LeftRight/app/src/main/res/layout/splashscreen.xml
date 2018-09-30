@@ -1,0 +1,50 @@
+<RelativeLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context=".SplashScreen"
+    android:background="@drawable/human">
+
+
+    <ImageView
+        android:id="@+id/ic"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/imageV"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/round" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="205dp"
+        android:src="@drawable/splashscreen" />
+
+    <ImageView
+        android:id="@+id/imageV"
+        android:layout_width="100dp"
+        android:layout_height="103dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="105dp"
+        android:layout_marginTop="162dp"
+        android:src="@drawable/splashscreen" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="100dp"
+        android:background="#000000"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:gravity="center"
+        android:id="@+id/te"/>
+
+    </RelativeLayout>

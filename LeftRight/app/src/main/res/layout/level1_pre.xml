@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@drawable/origami">
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:textColor="#000000"/>
+
+    <TextView
+        android:id="@+id/mTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"/>
+
+    <android.support.v4.widget.ContentLoadingProgressBar
+        android:id="@+id/progressbar"
+        style="@android:style/Widget.ProgressBar.Horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="15sp"
+        android:layout_marginEnd="20sp"
+        android:layout_marginStart="20sp"
+        android:max="100"
+        android:progress="0"
+        app:layout_constraintBottom_toTopOf="@id/mTextView" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:padding="10sp"
+        android:weightSum="2"
+        app:layout_constraintBottom_toTopOf="@+id/text">
+
+        <Button
+            android:id="@+id/left"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#0d0c0d"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#fbfdff"/>
+
+        <Button
+            android:id="@+id/right"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#f6f7f9"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="#111112"/>
+    </LinearLayout>
+
+</LinearLayout>
